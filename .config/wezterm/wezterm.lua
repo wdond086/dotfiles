@@ -4,7 +4,7 @@ local constants = require("constants")
 local commands = require("commands")
 
 -- Font settings
-config.font_size = 18
+config.font_size = 14
 config.line_height = 1.2
 config.font = wezterm.font_with_fallback({
 	{
@@ -45,7 +45,7 @@ config.window_padding = {
 }
 config.window_background_image = constants.bg_image
 config.macos_window_background_blur = 40
-config.window_background_opacity = 0.8
+config.window_background_opacity = 0.95
 
 -- Miscalleneous settings
 config.max_fps = 120
