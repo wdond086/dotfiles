@@ -8,6 +8,12 @@ config.font_size = 15
 config.line_height = 1.2
 config.font = wezterm.font_with_fallback({
 	{
+		family = "MesloLGS Nerd Font Mono",
+		weight = "Medium",
+		stretch = "Normal",
+		style = "Normal",
+	},
+	{
 		family = "MonaspiceRn Nerd Font Mono",
 		weight = "Medium",
 		stretch = "Normal",
