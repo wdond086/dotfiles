@@ -4,9 +4,15 @@ local constants = require("constants")
 local commands = require("commands")
 
 -- Font settings
-config.font_size = 15
+config.font_size = 12
 config.line_height = 1.2
 config.font = wezterm.font_with_fallback({
+	{
+		family = "Liga SFMono Nerd Font",
+		weight = "Medium",
+		stretch = "Normal",
+		style = "Normal",
+	},
 	{
 		family = "MesloLGS Nerd Font Mono",
 		weight = "Medium",
