@@ -42,9 +42,6 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
-# Setting Up Java
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
 # Setting up pnpm
 export PNPM_HOME="/Users/wdond086/Library/pnpm"
 case ":$PATH:" in
@@ -57,3 +54,7 @@ export PATH="/Users/wdond086/.local/bin:$PATH"
 
 # Aliases
 alias ll="ls -la"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
