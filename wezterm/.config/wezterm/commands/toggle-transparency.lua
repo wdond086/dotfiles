@@ -12,7 +12,7 @@ local command = {
 			overrides.window_background_opacity = 1
 		end
 
-		window:get_config_overrides(overrides)
+		window:set_config_overrides(overrides)
 	end),
 }
 

@@ -15,9 +15,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# Sourcing zsh-autocomplete. Has to be done at the top
-# source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
 # history setup
 HISFILE=$HOME/.zsh_history
 HISTSIZE=100000
@@ -34,9 +31,6 @@ alias ls="eza --icons=always"
 # Zoxide
 eval "$(zoxide init zsh)"
 alias cd="z"
-
-# Sourcing Zsh Syntax Highlighting. Has to be done last
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Starship setup
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
